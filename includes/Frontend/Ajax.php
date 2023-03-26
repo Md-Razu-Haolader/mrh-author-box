@@ -28,11 +28,11 @@ class Ajax
             ]);
         }
 
-        $data = array(
+        $data = [
             'name' => esc_attr($_POST['name']),
             'email' => esc_attr($_POST['email']),
             'enquiry' => esc_textarea($_POST['message'])
-        );
+        ];
 
         wp_send_json_success([
             'data' => $data,
