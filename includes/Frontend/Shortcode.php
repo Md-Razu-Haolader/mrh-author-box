@@ -11,7 +11,7 @@ class Shortcode
 
     public function __construct()
     {
-        add_shortcode('mrhab_enquiry', [$this, 'render_shortcode']);
+        add_shortcode('mrhab-enquiry', [$this, 'render_shortcode']);
     }
 
     public function render_shortcode($atts, string $content = '')

@@ -9,7 +9,7 @@
 				data,
 				function (response) {
 					if (response.success) {
-						console.log(response.data);
+						alert(response.data.message);
 					} else {
 						alert(response.data.message);
 					}

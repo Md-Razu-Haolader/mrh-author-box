@@ -34,7 +34,10 @@ class Ajax
             'enquiry' => esc_textarea($_POST['message'])
         );
 
-        wp_send_json_success($data);
+        wp_send_json_success([
+            'data' => $data,
+            'message' => 'Successfully submitted'
+        ]);
 
         wp_send_json_error([
             'message' => 'Something went wrong'
