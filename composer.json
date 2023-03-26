@@ -1,0 +1,19 @@
+{
+    "name": "razu/featured-post",
+    "description": "A plugin to add a settings page under settings menu, and a shortcode to show featured posts by using filters from the settings page.",
+    "type": "wordpress-plugin",
+    "license": "GPL v2",
+    "authors": [
+        {
+            "name": "Md. Razu Haolader",
+            "email": "razu.cse129@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MRH\\AuthorBox\\": "includes/"
+        }
+    }
+}
