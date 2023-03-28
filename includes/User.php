@@ -1,15 +1,12 @@
 <?php
 
-declare(strict_types=1);
+declare( strict_types=1 );
 
 namespace MRH\AuthorBox;
 
+class User {
 
-class User
-{
-
-    public function __construct()
-    {
+    public function __construct() {
         new User\Profile();
     }
 }

@@ -1,35 +1,28 @@
 <?php
 
-declare(strict_types=1);
+declare( strict_types=1 );
 
 namespace MRH\AuthorBox;
 
-class Activator
-{
+class Activator {
 
     /**
-     * Runs the activator
-     *
-     * @return void
+     * Runs the activator.
      */
-    public function run(): void
-    {
+    public function run(): void {
         $this->add_plugin_info();
     }
 
     /**
-     * Adds plugin info
-     *
-     * @return void
+     * Adds plugin info.
      */
-    public function add_plugin_info(): void
-    {
-        $activated = get_option('mrhab_installation_time');
+    public function add_plugin_info(): void {
+        $activated = get_option( 'mrhab_installation_time' );
 
-        if (!$activated) {
-            update_option('mrhab_installation_time', time());
+        if ( !$activated ) {
+            update_option( 'mrhab_installation_time', time() );
         }
 
-        update_option('mrhab_version', MRHAB_VERSION);
+        update_option( 'mrhab_version', MRHAB_VERSION );
     }
 }
